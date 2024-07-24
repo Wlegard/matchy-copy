@@ -13,24 +13,56 @@
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
-
+function search(animals, string){
+    for (let i = 0; i < animals.length; i++) {
+        if (animals[i].name === string) {
+            return animals[i]; // Return the animal object if found
+        }
+    }
+    return null
+}
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
-
+function replace(animals, name, replacement){
+    for (let i = 0; i < animals.length; i++) {
+if(animals[i].name === name)
+animals[i] = replacement;
+}
+}
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+function remove(animals, name){
+    for (var i = 0; i <animals.length; i++){
+        if(animals[i].name === name)
+        animals[i] = remove;
+}
+        }
+    
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+function add(animals, animal){
+    if(animal.name.length > 0 && animal.species.length > 0){
+        var isUniqueName = true;
+        for (var i = 0; i < animals.length; i++){
+            if(animals[i].name === animal.name){
+                isUniqueName = false;
+                break;
+            }
+        }
+        if (isUniqueName){
+            animals.push(animal);
 
+        }
+    }
+    
+}
 
 
 /**

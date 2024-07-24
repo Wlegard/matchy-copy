@@ -97,8 +97,8 @@ console.log(animals);
 //////////////////////////////////////////////////////////////////////
 var friends = [];
 // I chose an array because it's strings and I can access each friend at each index.
-function getRandom(animalsArray){
-  return Math.floor(Math.random() * animalsArray.length);
+function getRandom(arr){
+  return Math.floor(Math.random() * arr.length);
 }
 var randomIndex = getRandom(animals);
 friends.push(animals[randomIndex].name);
